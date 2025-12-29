@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header.ust{
+  background-color: #222;
+  background-image: url("./images/banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+/* LOGO */
+header h1{
+  padding: 20px;
+  font-size: 22px;
+}
+
+/* MENU */
+#nav ul{
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#nav ul li{
+  float: left;
+}
+
+#nav ul li a{
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav ul li a.btnMenu{
+  background: #f32853;
+  margin-left: 10px;
+}
+
+/* BANNER TEXT */
+#banner{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+#banner h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#banner p{
+  margin-bottom: 20px;
+}
+
+#banner a{
+  background: #f32853;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+#bolum2, #bolum3, #bolum4{
+  padding: 50px 10%;
+}
+
+#bolum2 p{
+  margin-top: 15px;
+  line-height: 26px;
+}
+
+/* SERVICES */
+.kapsayici3{
+  width: 100%;
+}
+
+.resim{
+  width: 45%;
+  float: left;
+  margin: 2.5%;
+  text-align: center;
+}
+
+.resim img{
+  width: 100%;
+  display: block;
+}
+
+.temizle{
+  clear: both;
+}
+
+/* CONTACT */
+.iletisimForm{
+  width: 50%;
+  float: left;
+}
+
+.iletisimForm input,
+.iletisimForm textarea{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.iletisimForm button{
+  background: #f32853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.bilgi{
+  width: 40%;
+  float: right;
+}
+
+/* FOOTER */
+footer{
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  clear: both;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+  #nav ul{
+    position: static;
+    text-align: center;
+  }
+
+  #nav ul li{
+    float: none;
+    display: inline-block;
+  }
+
+  .resim,
+  .iletisimForm,
+  .bilgi{
+    width: 100%;
+    float: none;
+  }
+}
